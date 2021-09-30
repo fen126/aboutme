@@ -14,6 +14,10 @@
 			color: #9370db; }
 	</style>
 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
 </head>
 <body>
 	<nav>
@@ -24,7 +28,7 @@
 		</ul>
 	</nav>
 
-	<main>
+	<main class="container-fluid bg-info text-white text-center">
 
 		<nav>
 			<h1>何丞棻 (Cheng-Fen Ho)</h1>
@@ -35,27 +39,30 @@
 		<img src="landscape.jpg" alt="照片">
 		<br><br><br>
 
-		<session id="aboutme">
-			<header>關於我</header>
-			<h3>職稱：靜宜大學資訊管理學系學生</h3>
-			<h3>經歷：靜宜大學~~~~~</h3>
-			<h3>Tel: <a herf="tel:0987869852">0987869852</a></h3>
-			<h3>E-Mail: <a href="mailto:fen.910126@gmail.com">fen.910126@gmail.com</a></h3>
-		</session>
+		<div class="row">
 
-		<article id="bookmark"> 
-			<header>珍藏書籤</header>
-			<h3>MAY ALL OF</h3>
-			<h3>YOUR VIBES SAY:</h3>
-			<h3>I GOT THIS.</h3>
-			<h3>(願你的氣場永遠展現出「這我OK」。)</h3>
-		</article> 
+			<session id="aboutme" class="col-lg-4">
+				<header>關於我</header>
+				<h3>職稱：靜宜大學資訊管理學系學生</h3>
+				<h3>經歷：靜宜大學~~~~~</h3>
+				<h3>Tel: <a herf="tel:0987869852">0987869852</a></h3>
+				<h3>E-Mail: <a href="mailto:fen.910126@gmail.com">fen.910126@gmail.com</a></h3>
+			</session>
 
-		<aside id="youtube">
-			<header>推薦影片</header>
-			<iframe src="https://www.youtube.com/embed/AhAJ6J01R7w" allowfullscreen></iframe>
-			
-		</aside>
+			<article id="bookmark" class="col-lg-4">
+				<header>珍藏書籤</header>
+				<h3>MAY ALL OF</h3>
+				<h3>YOUR VIBES SAY:</h3>
+				<h3>I GOT THIS.</h3>
+				<h3>(願你的氣場永遠展現出「這我OK」。)</h3>
+			</article> 
+
+			<aside id="youtube" class="col-lg-4">
+				<header>推薦影片</header>
+				<iframe src="https://www.youtube.com/embed/AhAJ6J01R7w" allowfullscreen></iframe>	
+			</aside>
+
+		</div><br><br>
 
 		<footer>
 			Copyright ©  何丞棻. All Rights Reserved.
