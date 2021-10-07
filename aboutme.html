@@ -21,6 +21,31 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+	<script>
+		$(document).ready(function(){
+			$("#PICTURE").click(function(){
+				$("#PICTURE").hide();
+				$("#PICTURE").fadeIn("slow")
+			});
+			
+			$("#I").hover(function(){
+				$("#PICTURE").attr("src","family.jpg");
+			});
+
+			$("#PU").hover(function(){
+				$("#PICTURE").attr("src","pu.jpg");
+			});
+
+			$("#CSIM").hover(function(){
+				$("#PICTURE").attr("src","pucsim.jpg");
+			});
+
+			$("#PICTURE").click(function(){
+				$("#PICTURE").hide();
+					$("#PICTURE").fadeIn("slow")
+			});
+		});
+	</script>
 
 </head>
 <body>
@@ -44,14 +69,14 @@
 
 		<nav>
 			<h1><a href="https://www.instagram.com/fen_0126/"
-				class="text-reset text-decoration-none text-white bg-primary">何丞棻 (Cheng-Fen Ho)</a></h1>
+				class="text-reset text-decoration-none text-white bg-primary" target="_blank" id="I">何丞棻 (Cheng-Fen Ho)</a></h1>
 			<h2><a href="https://www.pu.edu.tw/"
-				class="text-reset text-decoration-none text-white bg-primary">靜宜大學</a>
+				class="text-reset text-decoration-none text-white bg-primary" id="PU">靜宜大學</a>
 			 / <a href="https://csim.pu.edu.tw/"
-			 	class="text-reset text-decoration-none text-white bg-primary">資訊管理學系</a></h2>
+			 	class="text-reset text-decoration-none text-white bg-primary" id="CSIM">資訊管理學系</a></h2>
 		 </nav>
 
-		<img src="landscape.jpg" alt="照片" class="img-fluid rounded-circle">
+		<img src="landscape.jpg" alt="照片" class="img-fluid rounded-circle" id="PICTURE">
 		<br><br><br>
 
 		<div class="row">
